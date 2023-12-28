@@ -7,13 +7,13 @@ body {
 
 .caixa {
     position: fixed;
-    width: 50%;
+    width: 40%;
     height: 80%;
     background-color: rgba(255, 255, 255, 0.466);
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 2);
     margin: 5%;
-    left: 20%;
+    left: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,7 +97,7 @@ body {
 
     .input1,
     .input2
-    #inuput3 {
+     {
         width: 80%;
         margin-top: 5%;
         text-align: center;
@@ -113,9 +113,10 @@ input{
 }
 
 p{
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
+    margin: 0;
 }
 
 
@@ -125,7 +126,6 @@ p{
     background-color: rgba(3, 0, 0, 0.925);
     color: #fff;
     text-align: center;
-    color: rgb(0, 0, 0);
     border-radius: 30px;
     margin:20px;
     
@@ -142,3 +142,28 @@ p{
     justify-content: center;
 }
  
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 10%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    
+}
+
+#inuput3{  
+    width: 70%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
