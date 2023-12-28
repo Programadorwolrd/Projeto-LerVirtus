@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png" sizes="16x16" type="img/jpg">
+    <title>lervirtus</title>
+</head>
+<body >
+
+
+
+<!-- aqui começa o codigo do site  -->
+<section class="caixa">
+
+<div class="logo">
+    <img class="logoimg" src="img/logo.png" alt="">
+</div>
+
+
+            <div class="livro">
+
+                <input  type="text" name="nome" id="inuput1" name="inuput1"  placeholder="Digite o total de paginas:">
+    
+            </div>
+
+
+
+            <div class="paginas">
+
+                 <input id="inuput2" name="inuput2" placeholder="Paginas lidas por dia:">
+    
+            </div>
+
+
+            <button class="botao" id="button">
+                <p class="txt_botao">Calcular</p>
+            </button>
+
+</section>
+
+
+<script>
+
+// Variaveis que serão utilizadas
+
+
+button.onclick = function () {
+    let paginas = document.querySelector("#inuput1");
+    let dias = document.querySelector("#inuput2");
+    let valor1 = paginas.value;
+    let valor2 = dias.value;
+    console.log(valor1);
+    console.log(valor2);
+
+
+
+
+//logica
+if (paginas < 0 || dias <= 0) {
+  console.log("Digite valores válidos para páginas e dias.");
+}
+
+else { resultado = paginas / dias; console.log("Resultado:", resultado); }
+
+
+
+};
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
