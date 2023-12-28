@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,96 +9,43 @@
     <link rel="icon" href="img/logo.png" sizes="16x16" type="img/jpg">
     <title>lervirtus</title>
 </head>
-<body >
+
+<body>
+    <!-- aqui começa o codigo do site  -->
+    <section class="caixa">
+
+        <div class="logo">
+            <img class="logoimg" src="img/logo.png" alt="">
+        </div>
+
+
+        <div class="livro">
+
+            <input type="text" name="nome" id="inuput1" name="inuput1" placeholder="Digite o total de paginas:">
+
+        </div>
 
 
 
-<!-- aqui começa o codigo do site  -->
-<section class="caixa">
+        <div class="paginas">
 
-<div class="logo">
-    <img class="logoimg" src="img/logo.png" alt="">
-</div>
+            <input id="inuput2" name="inuput2" placeholder="Paginas lidas por dia:">
 
+        </div>
 
-            <div class="livro">
+        <button class="botao" id="button">
+            Calcular
+        </button>
 
-                <input  type="text" name="nome" id="inuput1" name="inuput1"  placeholder="Digite o total de paginas:">
-    
-            </div>
+        <div class="result">
+            <p>Paginas para ler por dia:</p>
+            <input id="inuput3" name="inuput3" type="text" placeholder="Resultado..." disabled>
 
-
-
-            <div class="paginas">
-
-                 <input id="inuput2" name="inuput2" placeholder="Paginas lidas por dia:">
-    
-            </div>
-
-            <button class="botao" id="button">
-                Calcular
-            </button>
-            
-            <div class="result">
-                <p>Paginas para ler por dia:</p>
-                <input id="inuput3" name="inuput3" type="text" placeholder="Resultado..." disabled >
-
-           </div>
+        </div>
+    </section>
 
 
-          
-
-</section>
-
-
-<script>
-// Variaveis que serão utilizadas
-button.onclick = function () {
-    let paginas = document.querySelector("#inuput1");
-    let dias = document.querySelector("#inuput2");
-    let valor1 = paginas.value;
-    let valor2 = dias.value;
-
-
-
-    if (valor1 < 0 || valor2 <= 0) {
-  alert("Digite valores válidos para páginas e dias.");
-}
-
-    else {
-     let resultado = valor1 / valor2; 
-     inuput3.value = resultado;
-    
-
-
-}};
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="style.js"></script>
 </body>
+
 </html>
