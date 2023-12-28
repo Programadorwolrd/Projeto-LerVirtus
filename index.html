@@ -43,34 +43,23 @@
 
 
 <script>
-
 // Variaveis que serão utilizadas
-
-
 button.onclick = function () {
     let paginas = document.querySelector("#inuput1");
     let dias = document.querySelector("#inuput2");
     let valor1 = paginas.value;
     let valor2 = dias.value;
-    console.log(valor1);
-    console.log(valor2);
 
 
 
-
-//logica
-if (paginas < 0 || dias <= 0) {
-  console.log("Digite valores válidos para páginas e dias.");
+    if (paginas < 0 || dias <= 0) {
+  alert("Digite valores válidos para páginas e dias.");
 }
 
-else { resultado = paginas / dias; console.log("Resultado:", resultado); }
-
-
-
-};
-
-
-
+    else {
+     let resultado = valor1 / valor2; 
+     alert(resultado);
+}};
 </script>
 
 
