@@ -34,6 +34,11 @@
     
             </div>
 
+            <div class="paginas">
+                <input id="inuput3" name="inuput3" type="text" placeholder="Resultado..." disabled >
+
+           </div>
+
 
             <button class="botao" id="button">
                 <p class="txt_botao">Calcular</p>
@@ -52,13 +57,16 @@ button.onclick = function () {
 
 
 
-    if (paginas < 0 || dias <= 0) {
+    if (valor1 < 0 || valor2 <= 0) {
   alert("Digite valores válidos para páginas e dias.");
 }
 
     else {
      let resultado = valor1 / valor2; 
-     alert(resultado);
+     inuput3.value = resultado;
+    
+
+
 }};
 </script>
 
